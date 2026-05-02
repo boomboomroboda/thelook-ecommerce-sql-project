@@ -3,6 +3,9 @@ OBJECTIVE: Identify missing values in critical order columns.
 LEARNING: Using COUNT and CASE statements to create a "Quality Dashboard."
 */
 
+-- RESULTS: 0 NULLs found across all critical columns.
+-- CONCLUSION: Dataset is verified for integrity; proceeding to Bronze-to-Silver transformation.
+
 SELECT
     COUNT(*) AS total_rows,
     COUNT(order_id) AS non_null_orders,
